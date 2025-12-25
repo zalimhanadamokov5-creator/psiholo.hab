@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Психологическая помощь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка (аналогичная главной странице) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="C:\Users\User\Desktop\Psychotherapy_icon.png" alt="Логотип Психологической помощи">
+                    <span>Психологическая помощь</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+                    <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+                    <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                    <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- для мобильных устройств -->
+    <nav class="vertical-nav" id="verticalNav">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+            <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+            <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+            <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <div class="container">
+            <div class="form-container">
+                <h1 class="form-title">Вход в личный кабинет</h1>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login" class="form-label">Логин</label>
+                        <input type="text" id="login" class="form-control" required>
+                        <div class="error-message" id="loginError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" id="password" class="form-control" required>
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Войти</button>
+                    </div>
+                    <div class="form-group text-center">
+                        <p>Нет аккаунта? <a href="register.html">Зарегистрируйтесь</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-motto">
+                <p>Профессиональная психологическая помощь для гармонии души и разума</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

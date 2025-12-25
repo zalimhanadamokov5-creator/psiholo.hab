@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="C:\Users\User\Desktop\Psychotherapy_icon.png" alt="Логотип Психологической помощи">
+                    <span>Психологическая помощь</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+                    <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+                    <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                    <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- для мобильных устройств -->
+    <nav class="vertical-nav" id="verticalNav">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+            <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+            <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+            <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="container">
+            <section class="hero">
+                <h1>Профессиональная психологическая помощь</h1>
+                <p>Мы поможем вам справиться с трудностями, найти внутренние ресурсы и улучшить качество жизни</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-primary">Начать путь к изменениям</a>
+                    <a href="#services" class="btn btn-secondary">Наши услуги</a>
+                </div>
+            </section>
+
+            <section class="news-section">
+                <h2>Последние новости</h2>
+                <div class="news-grid" id="newsGrid">
+                    <!-- Новости будут загружены через JavaScript -->
+                </div>
+            </section>
+
+            <section class="visitor-counter">
+                <h3>Количество посетителей сайта</h3>
+                <div class="counter-display">
+                    <i class="fas fa-users"></i>
+                    <span id="visitorCount">0</span>
+                </div>
+                <p class="counter-info">Обновляется каждые 5 секунд</p>
+            </section>
+
+            <section class="services" id="services">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Индивидуальная терапия</h3>
+                        <p>Личные консультации с профессиональными психологами для решения индивидуальных проблем.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Семейная психология</h3>
+                        <p>Помощь в решении семейных конфликтов, улучшении взаимоотношений и создании гармонии в семье.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Карьерное консультирование</h3>
+                        <p>Помощь в профессиональном самоопределении, преодолении стресса на работе и поиске баланса.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Тренинги и семинары</h3>
+                        <p>Групповые занятия и обучающие программы для развития эмоционального интеллекта и стрессоустойчивости.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-motto">
+                <p>Профессиональная психологическая помощь для гармонии души и разума</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

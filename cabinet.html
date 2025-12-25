@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Психологическая помощь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="C:\Users\User\Desktop\Psychotherapy_icon.png" alt="Логотип Психологической помощи">
+                    <span>Психологическая помощь</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+                    <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+                    <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                    <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- для мобильных устройств -->
+    <nav class="vertical-nav" id="verticalNav">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Вход</a></li>
+            <li><a href="register.html"><i class="fas fa-user-plus"></i> Регистрация</a></li>
+            <li><a href="cabinet.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+            <li><a href="admin.html"><i class="fas fa-cog"></i> Администрирование</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <div class="container">
+            <h1 class="form-title">Личный кабинет</h1>
+            
+            <div class="user-info" style="background-color: white; padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px; box-shadow: var(--box-shadow);">
+                <h2 style="margin-bottom: 15px;">Добро пожаловать, <span id="userName"></span>!</h2>
+                <a href="create-request.html" class="btn btn-primary" style="margin-bottom: 15px;">
+                    <i class="fas fa-plus"></i> Создать новую заявку
+                </a>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="statusFilter" class="filter-label">Фильтр по статусу:</label>
+                    <select id="statusFilter" class="filter-select">
+                        <option value="all">Все заявки</option>
+                        <option value="new">Только новые</option>
+                        <option value="solved">Только решенные</option>
+                        <option value="rejected">Только отклоненные</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <h2 style="margin-bottom: 20px;">Мои заявки</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Дата создания</th>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Категория</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="requestsTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Подвал -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-motto">
+                <p>Профессиональная психологическая помощь для гармонии души и разума</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
